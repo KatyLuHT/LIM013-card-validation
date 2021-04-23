@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #ddeefc;
+    font-family: "lato",sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    /* cuando se use en laptop solo ucupe un ancho de 100px */
+    max-width: 1000px;
+    padding: 40px,20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* estilos generales de la tarjetas */
+
+.tarjeta{
+    width: 100%;
+    max-width: 550px;
+    position: relative;
+    color: white;
+    /* cuando pase mouse gire a los 3 segundos */
+    transition: .3s ease all;
+    /* rotacion de 0 que se quede fija y nose mueva */
+    transform: rotateY(0deg);
+    /* permite el efecto de giro */
+    transform-style: preserve-3d;
+    /* cuando gire la parte de atraz este oculta */
+    backface-visibility: hidden;
+    cursor: pointer;
+    /* posicionar */
+    z-index: 2;
+    /* background-color: black; */
+}
+
+/* cuando pase cursor gire */
+/* .tarjeta:hover */
+
+/* cuando de click gire */
+.tarjeta:active{
+    /* gire 180 grados */
+    transform: rotateY(180deg);
+}
+
+/* estilos para ambas partes delantera y trasera */
+.tarjeta > div{
+    padding: 30px;
+    border-radius:15px;
+    /* indicamos el alto minimo */
+    min-height: 315px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 0 rgba(90,116,148,0.3);
+}
+
+.tarjeta.delantera{
+    width: 100%;
+    background: url(../src/img/fondo.jpg);
+    background-size: cover;
+}

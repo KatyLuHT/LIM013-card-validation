@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="contenedor">
+    <section class="tarjeta" id="tarjeta">
+      <div class="delantera">
+        <div class="logo-marca">
+          <img src="img/Mastercard-Inc.png" class="logo"alt="">
+        </div>
+        <img src="img/sim-card.png" class="chip">
+        <div class="datos">
+          <div class="grupo" id="numero">
+            <p class="label">numero tarjeta</p>
+            <p class="numero">##################</p>
+          </div>
+        </div>
+        <div class="flexbox">
+          <div class="grupo" id="nombre">
+            <p class="label">nombre tarjeta</p>
+            <p class="nombre">katy huamani</p>
+          </div>
+          <div class="grupo" id="expiracion">
+            <p class="label">expiracion</p>
+            <p class="expiracion"><span class="mes">MM</span>/<span class="year">AA</span> </p>
+          </div>
+        </div>
+      </div>
+      <div class="trasera">
+        
+      </div>
+    </section>
+  </div>
+
+  <footer></footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
